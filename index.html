@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculyator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    <section class="calculyator-section">
+        <div class="calculyator">
+            <div>
+                <form name="form">
+                    <input type="text" id="textChat" onkeypress="noSrtring(event)">
+                </form>
+            </div>
+            <div>
+                <div>
+                    <button class="button-whidth" onclick="clean()">C</button>
+                    <button class="button-whidth" onclick="back()"><ion-icon name="undo"></ion-icon></button>
+                    <button onclick="teg('+')">+</button>
+                </div>
+                <div>
+                    <button onclick="teg('7')">7</button>
+                    <button onclick="teg('8')">8</button>
+                    <button onclick="teg('9')">9</button>
+                    <button onclick="teg('-')">-</button>
+                </div>
+                <div>
+                    <button onclick="teg('4')">4</button>
+                    <button onclick="teg('5')">5</button>
+                    <button onclick="teg('6')">6</button>
+                    <button onclick="teg('*')">*</button>
+                </div>
+                <div>
+                    <button onclick="teg('1')">1</button>
+                    <button onclick="teg('2')">2</button>
+                    <button onclick="teg('3')">3</button>
+                    <button onclick="teg('/')">/</button>
+                </div>
+                <div>
+                    <button onclick="teg('0')">0</button>
+                    <button onclick="teg('.')">.</button>
+                    <button class="button-whidth-full" onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/main.js"></script>
+</body>
+</html>
